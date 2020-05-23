@@ -10,7 +10,17 @@
     ],
     "@babel/preset-react"
   ],
-  "plugins": ["babel-plugin-styled-components"],
+  "plugins": [
+    [
+      "babel-plugin-styled-components"
+    ],
+    [
+      "module-resolver",
+      {
+        "root": ["./src"]
+      }
+    ]
+  ],
   "ignore": [
     "node_modules/**"
   ]

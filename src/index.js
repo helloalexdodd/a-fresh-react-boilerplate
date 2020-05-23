@@ -6,8 +6,8 @@ import App from './components/containers/App';
 
 render(
 	<React.StrictMode>
+		<GlobalStyle />
 		<WebfontLoader config={WebfontLoaderConfig}>
-			<GlobalStyle />
 			<App />
 		</WebfontLoader>
 	</React.StrictMode>,

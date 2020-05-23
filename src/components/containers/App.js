@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, P } from './App.style';
-import logo from '../../assets/logo.png';
+import logo from 'assets/logo.png';
 
 const App = () => (
 	<Container>
