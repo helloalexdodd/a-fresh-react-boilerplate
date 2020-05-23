@@ -12,9 +12,9 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export const WebfontLoaderConfig = {
-	google: {
-		families: ['Open Sans'],
-	},
+  google: {
+    families: ['Open Sans'],
+  },
 };
 
 export default GlobalStyle;
