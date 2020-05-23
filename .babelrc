@@ -1,0 +1,17 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": "last 2 versions, ie 11, safari >= 11, ios_saf >= 10, chrome >=67"
+        }
+      }
+    ],
+    "@babel/preset-react"
+  ],
+  "plugins": ["babel-plugin-styled-components"],
+  "ignore": [
+    "node_modules/**"
+  ]
+}
