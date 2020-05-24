@@ -1,0 +1,71 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn webpack-dev-server",
+    "webpack": "webpack --config webpack.config.js --display-error-details",
+    "build": "webpack --config webpack.config.js --display-error-details --env=production",
+    "test": "jest",
+    "tdd": "jest --watchAll",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint --fix src/**/*.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint:fix",
+      "pre-push": "yarn lint"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "@testing-library/react-hooks": "^3.2.1",
+    "babel-jest": "^26.0.1",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-plugin-styled-components": "^1.10.7",
+    "clean-webpack-plugin": "^3.0.0",
+    "core-js": "3",
+    "css-loader": "^3.5.3",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-babel-module": "^5.1.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "2.5.0",
+    "file-loader": "^6.0.0",
+    "husky": "^4.2.5",
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5",
+    "prop-types": "^15.7.2",
+    "react-is": "^16.13.1",
+    "regenerator-runtime": "^0.13.5",
+    "url-loader": "^4.1.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@dr-kobros/react-webfont-loader": "^8.0.0",
+    "@testing-library/jest-dom": "^5.8.0",
+    "@testing-library/react": "^10.0.4",
+    "favicons-webpack-plugin": "^3.0.1",
+    "html-webpack-plugin": "^4.3.0",
+    "jest-axe": "^3.4.0",
+    "jest-dom": "^4.0.0",
+    "jest-styled-components": "^7.0.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.0",
+    "styled-normalize": "^8.0.7",
+    "webfontloader": "^1.6.28",
+    "webpack": "^4.43.0",
+    "webpack-merge": "^4.2.2"
+  }
+}
