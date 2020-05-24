@@ -11,16 +11,6 @@
     "eslint",
     "fresh"
   ],
-  "files": [
-    "yarn.lock",
-    "webpack.config.js",
-    "LICENSE",
-    "jest.setup.js",
-    "jest.config.js",
-    ".gitignore",
-    ".eslintrc",
-    ".babelrc"
-  ],
   "bugs": "https://github.com/helloalexdodd/a-fresh-react-boilerplate",
   "homepage": "https://github.com/helloalexdodd/a-fresh-react-boilerplate",
   "repository": {
