@@ -1,6 +1,6 @@
 {
   "name": "a-fresh-react-boilerplate",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "src/index.js",
   "keywords": [
     "react",
@@ -10,6 +10,16 @@
     "jest",
     "eslint",
     "fresh"
+  ],
+  "files": [
+    "yarn.lock",
+    "webpack.config.js",
+    "LICENSE",
+    "jest.setup.js",
+    "jest.config.js",
+    ".gitignore",
+    ".eslintrc",
+    ".babelrc"
   ],
   "bugs": "https://github.com/helloalexdodd/a-fresh-react-boilerplate",
   "homepage": "https://github.com/helloalexdodd/a-fresh-react-boilerplate",
