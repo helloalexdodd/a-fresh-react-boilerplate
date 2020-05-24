@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
+    jest: true,
   },
   extends: [
     'airbnb',
@@ -18,4 +19,12 @@ module.exports = {
     'prettier/prettier': ['error'],
     'react/jsx-filename-extension': 0,
   },
+  overrides: [
+    {
+      files: ['src/components/index.js'],
+      rules: {
+        'import/prefer-default-export': 'off',
+      },
+    },
+  ],
 };

@@ -4,12 +4,27 @@
       "@babel/preset-env",
       {
         "targets": {
-          "browsers": "last 2 versions, ie 11, safari >= 11, ios_saf >= 10, chrome >=67"
+          "browsers": "last 2 versions, ie 11, safari >= 11, ios_saf >= 10, chrome >=67",
+          "node": "current"
         }
       }
     ],
     "@babel/preset-react"
   ],
+  "env": {
+    "test": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "node": "current"
+            }
+          }
+        ]
+      ]
+    }
+  },
   "plugins": [
     [
       "babel-plugin-styled-components"
@@ -17,7 +32,13 @@
     [
       "module-resolver",
       {
-        "root": ["./src"]
+        "root": ["./src"],
+        "alias": {
+          "components": "./src/components",
+          "assets": "./src/assets",
+          "hooks": "./src/hooks",
+          "utils": "./src/utils"
+        } 
       }
     ]
   ],

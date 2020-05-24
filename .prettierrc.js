@@ -3,6 +3,5 @@ module.exports = {
   singleQuote: true,
   jsxBracketSameLine: false,
   trailingComma: 'all',
-  arrowParens: 'avoid',
-  parser: 'babel'
+  parser: 'babel',
 };
