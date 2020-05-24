@@ -1,7 +1,22 @@
 {
-  "name": "react-boilerplate",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "a-fresh-react-boilerplate",
+  "version": "1.0.2",
+  "main": "src/index.js",
+  "keywords": [
+    "react",
+    "webpack",
+    "boilerplate",
+    "babel",
+    "jest",
+    "eslint",
+    "fresh"
+  ],
+  "bugs": "https://github.com/helloalexdodd/a-fresh-react-boilerplate",
+  "homepage": "https://github.com/helloalexdodd/a-fresh-react-boilerplate",
+  "repository": {
+    "url": "https://github.com/helloalexdodd/a-fresh-react-boilerplate",
+    "type": "git"
+  },
   "license": "MIT",
   "scripts": {
     "start": "yarn webpack-dev-server",
