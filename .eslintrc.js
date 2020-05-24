@@ -26,5 +26,12 @@ module.exports = {
         'import/prefer-default-export': 'off',
       },
     },
+    {
+      files: ['./webpack.config.js'],
+      rules: {
+        'import/no-dynamic-require': 'off',
+        'global-require': 'off',
+      },
+    },
   ],
 };

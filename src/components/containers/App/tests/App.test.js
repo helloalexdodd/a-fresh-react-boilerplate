@@ -1,14 +1,14 @@
 import React from 'react';
-import { render, cleanup } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { axe } from 'jest-axe';
 import App from '../App';
 
-afterEach(cleanup);
+const message = 'Thank-you for downloading!';
 
 describe('App', () => {
-  it('should take a snapshot', () => {
-    const { container } = render(<App />);
-    expect(container).toMatchSnapshot();
+  it('should render with default message', () => {
+    const { getByText } = render(<App />);
+    expect(getByText(message)).toBeInTheDocument();
   });
 });
 
